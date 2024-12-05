@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="helvetasfront">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>helvetasfront</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <script>
+    const serviceWorkerVersion = null;
+  </script>
+
+  <!-- Flutter initialization -->
+  <script src="flutter.js" defer></script>
+
+</head>
+<body>
+  <div style='height: 60px;'></div>
+<!--
+  <form action="tu_accion_backend" method="POST">
+    <div class="g-recaptcha" data-sitekey="6LcAUHcqAAAAAHGG24CqOBjOuNq3ItgW5bxQqlMu"></div>
+    <button type="submit">Verificar</button>
+</form>
+  -->  
+  <!-- Aquí agregamos el Friendly CAPTCHA -->
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

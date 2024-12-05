@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "425892521104",
+    "project_id": "pachayatina-35330",
+    "storage_bucket": "pachayatina-35330.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425892521104:android:89f73a43c31dbe72e52415",
+        "android_client_info": {
+          "package_name": "com.example.helvetasfront"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG2KIlCUYs7atthB06_cWqTofpe4-tKbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
